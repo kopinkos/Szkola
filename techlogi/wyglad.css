@@ -1,0 +1,44 @@
+header .tytul_slogan{
+    position: absolute;
+    top: 5%;
+    left: 15%;
+}
+nav a{
+    display: inline-block;
+    width: 12%;
+    text-decoration: none;
+    text-align: center;
+    border-right: 2px black solid;
+}
+footer{
+    border-top: 2px black solid;
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+}
+.linki{
+    border: 2px black solid;
+    padding: 10px;
+}
+.linki a{
+    display: inline-block;
+    width: 100%;
+}
+.blok{
+    border: 2px black solid;
+    padding: 10px;
+}
+main{
+    display: flex;
+    padding-bottom: 20px ;
+}
+.lewa{
+    width: 20%;
+}
+.srodek{
+    width: 100%;
+    padding-left: 30px;
+}
+.srodek  p{
+    border-top: 2px black solid;
+}
