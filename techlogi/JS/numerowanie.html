@@ -1,0 +1,60 @@
+<!--
+    Tworzenie i modyfikowanie elementów po kliknięciu:
+
+    1. Stwórz przycisk w HTML.
+    2. Utwórz dwie klasy, umożliwiające ostylowanie elementów, tak aby powstał kwadrat i kółko
+    3. Pobierz przycisk za pomocą JavaScript, i dodaj do niego zdarzenie na click
+    4. Utwórz funkcję, która:
+        - będzie tworzyła nowy element div (createElement)
+        - przypisz do nowego elementu liczbę (liczba powinna być zmienną, inkrementowaną na końcu programu);
+        - Utwórz warunek dodający do co piątego elementu klasę stylującą element 
+        na kółko, każdy inny element powinien być kwadratem. 
+        - dodaj utworzony element do ciała strony (document.body)
+    5. Podłącz funkcję do zdarzenia kliknięcia.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Numerowanie</title>
+
+
+    <style>
+        #przycisk{
+            width: 100%;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+        .kolo{
+            width: 50px;
+            height: 50px;
+            border: 1px solid black;
+            border-radius: 50px;
+            margin: 10px;
+            float: left;
+            text-align: center;
+            line-height: 50px;
+        }
+        div{
+            width: 50px;
+            height: 50px;
+            border: 1px solid black;
+            background-color: black;
+            color: white;
+            margin: 10px;
+            float: left;
+            text-align: center;
+            line-height: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div id="przycisk">
+    <button onclick="dodaj();">Utwórz element</button>
+</div>
+<script src="skrypt.js"></script>
+</body>
+</html>
