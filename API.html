@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function ksiazki(){
+            fetch("https://the-one-api.dev/v2/book")
+            .then(
+            response => response.json()
+            ).then(
+            (data) => {
+                for(let i = 0; i < data.docs.length; i++ ){
+                    console.log(i+1+"."+data.docs[i].name)
+                    rodzial(data.docs[i]._id)
+                }
+            }
+            )
+        }
+        function rodzial(id){
+            fetch("https://the-one-api.dev/v2/book/"+id+"/chapter")
+            .then(
+            response => response.json()
+            ).then(
+            (data) => {
+                for(let x = 0; x < data.docs.length; x++){
+                    console.log(x+1+"."+ data.docs[x].chapterName)
+                    }
+                }
+            )
+        }
+        
+    </script>
+    
+</body>
+</html>
