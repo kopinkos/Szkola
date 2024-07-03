@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style formularz.css">
+</head>
+<body>
+    <form action="" method="post">
+        <input type="checkbox" name="hobby" value="pilka nozna"/> pilka nozna 
+        <input type="checkbox" name="hobby" value="siatkowka"/> siatkowka  
+        <input type="checkbox" name="hobby" value="pilka reczna"/> pilka reczna 
+        <input type="submit" value="pokaz">
+    </form>
+    <div></div>
+
+    <script>
+        //pobieramy formularz
+        let formularz = document.querySelector('form');
+        //pobieramy pole o nazwie liczba
+        let pilka_nozna = document.querySelector('input[value="pilka nozna"]');
+        let pilka_reczna = document.querySelector('input[value="pilka reczna"]');
+        let siatkowka = document.querySelector('input[value="siatkowka"]');
+        let div = document.querySelector('div');
+
+        //obsluga formularza
+        formularz.addEventListener('submit', (e) =>{
+            //wstrzymanie domyślnej akcji
+            e.preventDefault();
+            let message2 = "";
+ 
+            if(pilka_nozna.checked) {
+                message2 = (message2 + " pilka nozna");
+            }
+            if(pilka_reczna.checked) {
+                message2 = (message2 + " pilka reczna");
+            }
+            if(siatkowka.checked) {
+                message2 = (message2 + " siatkowka");
+            }
+
+            div.textContent = message2;
+            //let LiczbaZFormularza = liczba.value;
+            //powyzsza wartosc wrzucamy do diva
+     
+
+        });
+    </script>
+</body>
+</html>

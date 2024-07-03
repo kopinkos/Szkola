@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom</title>
+    <style>
+        .zmiana{
+            background-color: black;
+            color: white;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Przykłady z modelu dom</h1>
+    <div class="sekcja">
+        <h2 id="tytul">tytul akapitu</h2>
+        <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae blanditiis itaque aspernatur, rem explicabo autem necessitatibus at optio vitae asperiores a. Odio, odit repudiandae distinctio labore modi minus laboriosam provident.
+        </p>
+        <p>
+           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit quae dolores cumque dolorum provident perspiciatis omnis praesentium, reprehenderit molestiae possimus. Nulla dolore inventore voluptatum architecto maiores assumenda quae mollitia illum?
+        </p>
+        <p>
+            obrazek
+        </p>
+    </div>
+    <script>
+        let h1 = document.querySelector('h1');
+        let div = document.querySelector('.sekcja'); //pobieramy diva o klasie .sekcja
+       // let h2 = document.querySelector('#tytul');
+        let h2 = document.getElementById('tytul'); // pobieramy naglowek o ID=tytul
+        let akapity = document.querySelectorAll('p')
+
+        //zmiana akapitu 1
+        akapity[0].innerHTML = '<b>Nowa tresc akapitu</b>';
+        //akapity[0].textContent = '<b>nowa tresc akapitu</b>'; nie dziala html
+
+        //wymiana obrazka na inny w p2
+        // let obrazek = document.querySelector('img');
+        // //podmienamy zawartosc atrybutu src
+        // obrazek.setAttribute('src','adres obrazka drugiego');
+        
+        //zmiana kolor czcionki h1
+        h1.style.color = 'orange';
+        h1.style.fontFamily = 'Arial';
+
+        //dodajemy klase .zmiana do akapitow
+        // I sposob
+        // akapity[0].classList.add('zmiana');
+        // akapity[1].classList.add('zmiana');
+        // II sposob
+        akapity.forEach(akapit =>{
+            akapit.classList.add('zmiana');
+        });
+
+        //usuwamy obrazek
+        // obrazek.remove();
+        
+        //tworzymy nowy element html i wstawiamy do strony
+        let nowyObrazek = document.createElement('img');
+        nowyObrazek.src = 'adres';
+        document.body.appendChild(nowyObrazek);
+    </script>
+</body>
+</html>

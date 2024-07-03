@@ -1,0 +1,25 @@
+body{
+    background-color: aqua;
+}
+p{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.div1{
+background-color: rgb(255,0,0);
+width: 50%;
+display: flex;
+margin-right: auto;
+margin-left: auto;
+}
+.div2{
+background-color: #008;
+height: 20%;
+margin: 100px;
+
+}
+.p1{
+    font-size: 24px;
+}
+.p2{
+    font-size: 32px;
+}

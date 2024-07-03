@@ -1,0 +1,26 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+nav{
+    padding: 20px ;
+}
+ul{
+    list-style: none;
+    justify-content: space-between;
+    display: flex;
+}
+ul li a{
+    text-decoration: none;
+    background-color: aqua;
+    color: white;
+    padding: 10px;  /*odleglosc miedzy linkami*/
+    border-radius: 10px;
+    border: 2px solid wheat;
+    transition: 0.5s;
+}
+ul li a:hover{
+    color: rebeccapurple;
+    
+
+}

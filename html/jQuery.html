@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" 
+    integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" 
+    crossorigin="anonymous" 
+    referrerpolicy="no-referrer">
+    </script>
+</head>
+<body>
+    <h1>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam assumenda, earum ullam dolorem, maiores, tempore voluptas deserunt expedita itaque recusandae blanditiis sapiente incidunt culpa explicabo repudiandae animi nulla quibusdam eligendi.</h1>
+    <h3>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex labore provident qui, ab fugiat vero aspernatur non harum recusandae, delectus fugit ea. Dolores corporis obcaecati deserunt reprehenderit tempora assumenda beatae!</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem quisquam laboriosam cumque iusto assumenda tenetur saepe, consectetur necessitatibus rem quas sit ab nobis, eaque vel et! Quaerat iusto qui perferendis.</p>
+    
+    <script>
+        let h1 =document.querySelector('h1');
+        h1.textContent = 'nowa tresc w naglowku dodana przez js';
+        h1.style.color = 'red';
+        document.querySelector('p').style.color ='white';
+
+
+
+        $('h3').text('nowa tresc do naglowka 3 przez jquery');
+        $('h3').css('color', 'blue');
+        $('p').css('background-color', 'black');
+    </script>
+</body>
+</html>

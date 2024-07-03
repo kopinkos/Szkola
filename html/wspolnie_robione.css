@@ -1,0 +1,127 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    background-color: red;
+    padding: 20px 30px;
+    border-bottom: 2px solid black;
+}
+.logo{
+    height: 100%;
+    object-fit: cover;
+}
+.hamburger{
+    height: 50px;
+    padding: 0 20px;
+}
+.menu-items{
+    display: none;
+}
+.header p{
+    padding: 15px 0;
+}
+.header button{
+    display: block;
+    margin: 0 auto;
+    padding: 10px 15px;
+}
+.header h1{
+    text-align: center;
+    margin-top: 20px;
+}
+.header{
+    padding: 20px 30px;
+}
+.header img{
+    width: 100%;
+    object-fit: cover;
+}
+.banner{
+    height: 100px;
+}
+.info-item h3{
+    text-align: center;
+
+}
+.info-item button{
+    display: block;
+    margin-bottom: 30px;
+    margin: 0 auto;
+    padding: 10px 15px;
+}
+.info{
+    padding: 20px 30px;
+}
+.info-item p{
+    padding: 15px 0;
+}
+.img{
+    display: none;
+}
+.form h2{
+    text-align: center;
+    padding-bottom: 20px;
+}
+.form-item input, 
+.form-item textarea{
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+}
+.kontakt{
+    padding: 20px 30px;
+}
+@media (min-width: 900px){
+    .menu-items{
+        display: flex;
+        list-style: none;
+
+    }
+    .menu-link{
+        display: block;
+        padding: 20px 30px;
+        border: 1px solid black;
+        color: black;
+        text-decoration: none;
+    }
+    .hamburger{
+        display: none;
+    }
+    .header{
+        justify-content: space-between;
+        width: 100%;
+        display: flex;
+    }
+    .image{
+        flex-basis: 61%;
+        order: 2;
+    }
+    .header h1{
+        text-align: left;
+    }
+    .header button{
+        margin: 0;
+    }
+    .wrapper{
+        flex-basis: 39%;
+    }
+    .info{
+        display: flex;
+        justify-content: space-between;
+
+    }
+    .info-item{
+        flex-basis: 30%;
+    }
+    .info-item h3{
+        text-align: left;
+    }
+    
+}

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .menu{
+            background-color: darkred;
+            height: 100px;
+            width: 100%;
+        }
+        .lewa{
+            background-color: aqua;
+            width: 25%;
+        }
+        .prawa{
+            /* background-color: black; */
+            width: 75%;
+        }
+        .sekcja1{
+            background-color: orange;
+            width: 100%;
+            height: 100px;
+        }
+        .kontener{
+            display: flex;
+        }
+        .sekcja2{
+            background-color: goldenrod;
+            height: 100px;
+            flex-basis: 50%;
+        }
+        .sekcja3{
+            background-color: blue;
+            flex-basis: 50%;
+        }
+        .sekcja4{
+            height: 200px;
+            background-color: khaki;
+            flex-basis: 100%;
+        }
+        .sekcja5{
+            background-color: green;
+            height: 200px;
+            flex-basis: 100%;
+        }
+        .sekcja6{
+            background-color: burlywood;
+            
+            flex-basis: 100%;
+        }
+        .sekcja7{
+            background-color: firebrick;
+            
+            flex-basis: 100%;
+        }
+        .sekcja8{
+            background-color: darkcyan;
+            
+            flex-basis: 100%;
+        }
+        .kontmaly{
+            display: flex;
+            flex-basis: 50%;
+            flex-wrap: wrap;
+
+        }
+        .sekcja9{
+            background-color: rgb(123, 114, 173);
+            width: 100%;
+            height: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div class="menu"></div>
+    <div class="lewa"></div>
+    <div class="prawa">
+        <div class="sekcja1"></div>
+        <div class="kontener">
+        <div class="sekcja2"></div>    
+        <div class="sekcja3"></div> 
+        </div>
+        <div class="kontener">
+            <div class="kontmaly">
+                <div class="sekcja4"></div>  
+                <div class="sekcja5"></div> 
+            </div>     
+            <div class="kontmaly">
+                <div class="sekcja6"></div>  
+                <div class="sekcja7"></div>  
+                <div class="sekcja8"></div>
+            </div>
+        </div>
+        <div class="sekcja9"></div>      
+    </div>
+</body>
+</html>

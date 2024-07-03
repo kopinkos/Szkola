@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .popup-kontener{
+            display: none;
+            width: 100%;
+            height: 100%;
+            position: fixed;
+            top: 0;
+            left: 0;
+            background-color: rgba(0, 0, 0, 0.7);
+        }
+        .popup{
+            width: 80%;
+            height: 70%;
+            background-color: white;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        .show{
+            display: block;
+        }
+        .popup span{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 30px;
+            position: absolute;
+            background-color: white;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            top: -25px;
+            right: -25px;
+            cursor: pointer;
+
+        }
+    </style>
+</head>
+<body>
+    <h2>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero placeat quisquam magni earum amet pariatur, recusandae sunt officiis obcaecati explicabo quo assumenda voluptatum maxime odio ex ad rerum optio laboriosam?\ 
+    </h2>
+    <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo tempore itaque sit. Optio, quas unde illo aut maxime reiciendis in fugiat tempora perspiciatis. Repellendus ducimus aperiam deserunt cum porro rerum.
+    </p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique impedit ea id corrupti reprehenderit! Eum, esse! Omnis ullam id quibusdam officia, ipsa, eum dolore maxime libero sint ab rem necessitatibus.
+    </p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam, obcaecati nihil velit laboriosam modi maiores cumque architecto dolorem rerum quisquam a illo qui esse voluptatibus provident accusamus iste? Ipsum, id!
+    </p>
+    <h2>Lorem, ipsum.</h2>
+    <button>Zloz zamowienie</button>
+    <h2>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero placeat quisquam magni earum amet pariatur, recusandae sunt officiis obcaecati explicabo quo assumenda voluptatum maxime odio ex ad rerum optio laboriosam?\ 
+    </h2>
+    <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo tempore itaque sit. Optio, quas unde illo aut maxime reiciendis in fugiat tempora perspiciatis. Repellendus ducimus aperiam deserunt cum porro rerum.
+    </p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique impedit ea id corrupti reprehenderit! Eum, esse! Omnis ullam id quibusdam officia, ipsa, eum dolore maxime libero sint ab rem necessitatibus.
+    </p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam, obcaecati nihil velit laboriosam modi maiores cumque architecto dolorem rerum quisquam a illo qui esse voluptatibus provident accusamus iste? Ipsum, id!
+    </p>
+    <div class="popup-kontener">
+        <div class="popup">
+            <!-- tu bedzie kod zawartosci okien popup -->
+            <span>X</span>
+            <header></header>
+            <footer></footer>
+        </div>
+    </div>
+    <script>
+        let btn = document.querySelector('button');
+        let popup = document.querySelector('.popup-kontener');
+        let x = document.querySelector('.popup span');
+
+        btn.addEventListener('click', function(){
+            popup.classList.add('show');
+
+        });
+        x.addEventListener('click', function(){
+            popup.classList.remove('show');
+        });
+    </script>
+</body>
+</html>

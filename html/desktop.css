@@ -1,0 +1,46 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+/* desktop first */
+/*  ponizsze style beda obowiazywaly dla urzadzen o wielkosci wiekszej niz 1099px */
+body{
+    background-color: darkturquoise;
+}
+h1{
+    font-size: 4rem;
+    background-color: maroon;
+    color: blanchedalmond;
+    padding: 30px 20px;
+}
+p{
+    color: gray;
+    font-size: 3rem;
+    padding: 80px;
+}
+/*  ponizsze style beda obowiazywaly dla urzadzen o wielkosci mniejszej niz 1099px */
+@media (max-width: 1099px){
+    h1{
+        font-size: 3.5rem;
+        background-color: palegreen;
+        color: brown;
+        text-align: center;
+    }
+    p{
+        font-size: 2rem;
+        padding: 50px;
+    }
+}
+/*  ponizsze style beda obowiazywaly dla urzadzen o wielkosci mniejszych niz 600px */
+@media (max-width: 599px){
+    h1{
+        font-size: 2.5rem;
+        background-color: lightblue;
+        text-align: center;
+    }
+    p{
+        font-size: 1.5rem;
+        padding: 50px;
+        color: hotpink;
+    }
+}
