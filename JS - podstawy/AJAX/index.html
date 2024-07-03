@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplikacja w AJAX</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <form >
+        <label >
+            Wybierz plec:
+            <select name="plec">
+                <option value="both">wszyscy</option>
+                <option value="female">kobiety</option>
+                <option value="male">mezczyzni</option>
+            </select>
+        </label>
+        <label>
+            Liczba osob:
+            <input type="number" name="liczba_osob" value="5"/>
+        </label>
+        <input type="submit" value="pokaz_uzytkownikow"/>
+    </form>
+    <div class="uzytkownicy">
+        <!-- tu bedziemy wyswietlac uzytkownikow -->
+        
+    </div>
+
+    <script src="skrypt.js"></script>
+</body>
+</html>
