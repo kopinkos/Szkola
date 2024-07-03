@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakty</title>
+    <script src="kontakt.js"></script>
+    <script src="dodawanie.js"></script>
+</head>
+<body>
+    <input type="text" name="dodajKontak" placeholder="dodaj kontakt">
+    <button class="btn_wyswietl">dodaj</button>
+    <script>
+        let kontakt1 = new kontakt('Ania','Anubis',606241320);
+        let kontakt2 = new kontakt('Bartek','Barno', 234542198);
+
+
+
+
+
+        let div1 = document.createElement('div');
+        document.body.appendChild(div1);
+        let div2 = document.createElement('div');
+        document.body.appendChild(div2);
+
+
+
+        let dodawanie1 = new dodaj('Kontakty na A');
+        dodawanie1.add(kontakt1);
+        let dodawanie2 = new dodaj('Kontakty na B');
+        dodawanie2.add(kontakt2);
+
+        div1.innerHTML =`
+        <p>${dodawanie1.nazwa} </p>
+        <p>Kontakt: ${dodawanie1.wyswietl()} </p>
+        `;
+        div2.innerHTML =`
+        <p>${dodawanie2.nazwa} </p>
+        <p>Kontakt: ${dodawanie2.wyswietl()} </p>
+        `;
+    </script>
+</body>
+</html>
